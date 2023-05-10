@@ -10,7 +10,7 @@
   <script async src="jquery.js"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9239308800995141"
-  crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
   <!-- Serviceworker code for PWA  -->
   <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
   <script src="script.min.js"></script>
@@ -25,7 +25,7 @@
       });
     }
   </script>
-  
+
   <!-- 
     - custom css link
   -->
@@ -37,7 +37,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
- <script data-cfasync="false" src="//d1lnjzqqshwcwg.cloudfront.net/?zjnld=985963"></script>
+  <script data-cfasync="false" src="//d1lnjzqqshwcwg.cloudfront.net/?zjnld=985963"></script>
 </head>
 
 <body id="top" class="bodytop">
@@ -55,7 +55,7 @@
 
       <div class="header-actions">
 
-       
+
 
         <div class="lang-wrapper">
           <label for="language">
@@ -64,11 +64,11 @@
 
           <select name="language" id="language">
             <option value="en">EN</option>
-          
+
           </select>
         </div>
 
-       
+
 
       </div>
 
@@ -104,7 +104,7 @@
             <a href="tvpath.html" class="navbar-link">Tv Show</a>
           </li>
 
-         
+
 
           <li>
             <a href="movie-details.html" class="navbar-link">Pricing</a>
@@ -112,7 +112,7 @@
 
         </ul>
 
-        
+
 
       </nav>
 
@@ -129,9 +129,40 @@
       <!-- 
         - #HERO
       -->
+      <div class="popup-wrapper">
+        <div class="popup">
+          <div class="popup-header">
 
-      
+            <button class="close-btn">&times;</button>
+          </div>
+          <a href="https://trkrspace.com/show.php?l=0&u=856857&id=52933&tracking_id="><div class="popup-content">
+            <img src="cashappad.png">
+          </div></a>
+        </div>
+      </div>
 
+      <script>
+        // Get the popup wrapper and the close button
+        const popupWrapper = document.querySelector('.popup-wrapper');
+        const closeBtn = document.querySelector('.close-btn');
+
+        // Show the popup when the page is loaded
+        window.addEventListener('load', function () {
+          popupWrapper.style.display = 'flex';
+        });
+
+        // Close the popup when clicked on the close button
+        closeBtn.addEventListener('click', function () {
+          popupWrapper.style.display = 'none';
+        });
+
+        // Close the popup when clicked outside the popup
+        popupWrapper.addEventListener('click', function (e) {
+          if (e.target === popupWrapper) {
+            popupWrapper.style.display = 'none';
+          }
+        });
+      </script>
 
 
 
@@ -151,7 +182,7 @@
               <h2 class="h2 section-title">Popular Movies</h2>
             </div>
 
-           
+
 
           </div>
 
@@ -271,8 +302,7 @@
 
                 <a href="northman.html?imdb=tt10366206&type=movie&title=John_Wick:_Chapter_4">
                   <figure class="card-banner">
-                    <img src="./assets/images/johnwick.jpg"
-                      alt="The Unbearable Weight of Massive Talent movie poster">
+                    <img src="./assets/images/johnwick.jpg" alt="The Unbearable Weight of Massive Talent movie poster">
                   </figure>
                 </a>
 
@@ -316,7 +346,7 @@
         - #SERVICE
       -->
 
-    
+
 
 
 
@@ -746,7 +776,8 @@
                 </a>
 
                 <div class="title-wrapper">
-                  <a href="northman.html?imdb=tt11311302&season=1&episode=1&title=Vikings:_Valhalla_E01_The_Greenlanders">
+                  <a
+                    href="northman.html?imdb=tt11311302&season=1&episode=1&title=Vikings:_Valhalla_E01_The_Greenlanders">
                     <h3 class="card-title">Vikings: Valhalla</h3>
                   </a>
 
@@ -821,7 +852,7 @@
         - #CTA
       -->
 
-      
+
 
     </article>
   </main>
@@ -836,7 +867,7 @@
 
   <footer class="footer">
 
-    
+
 
     <div class="footer-bottom">
       <div class="container">
@@ -845,7 +876,7 @@
           &copy; 2023 <a href="#">MovieHive</a>. All Rights Reserved
         </p>
 
-        
+
       </div>
     </div>
 
